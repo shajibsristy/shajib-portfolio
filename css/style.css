@@ -40,8 +40,9 @@ ul{list-style:none}
 .container{width:min(calc(100% - 40px),var(--container));margin:auto}
 .header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:var(--header);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
 .navbar{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;line-height:0}
-.logo-photo{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--primary);background:var(--bg-alt)}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-photo{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--primary);background:var(--bg-alt);flex-shrink:0}
+.logo-name{font-family:Cambria,Georgia,serif;font-size:1.05rem;font-weight:800;letter-spacing:-.3px;color:var(--navy);white-space:nowrap;line-height:1}
 .nav-menu{display:flex;align-items:center;gap:22px}
 .nav-link{color:var(--muted);font-size:.88rem;font-weight:700;transition:var(--transition)}
 .nav-link:hover,.nav-link.active{color:var(--primary)}
